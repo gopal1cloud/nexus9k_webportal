@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}Home{% endblock %}
+{% block page-id %}scripts{% endblock %}
+
+{% block content %}
+<div id="content">
+  <div class="content">
+    <div class="columns scripts">
+      <div class="column-main">
+        <h1>Nexus 9000 Deploy</h1>
+        <p>
+          I'm using google webfonts and they fine at super large font sizes, but at 18px, they look awful. I've read here and there that there are solutions for font smoothing, but I haven't found any where that explains it clearly and the few snippets I have found don't work at all.
+<br><br>
+My h4 looks awful in pretty much every browser, but Chrome is the worst. In Chrome, pretty much all of my fonts look terrible.
+We have been seeing the same feedback ("I don't know where to post a new message, so I've replied to this one...") for quite many topic hijackings as well as new topics (sic!) posted on our Community feedback board as well.
+<br><br>
+Can anyone point me in the right direction? Perhaps you know of a resource that explains this clearly? Thanks!<br>
+The new Cisco Nexus switches and connectivity options provide industry-leading multitenancy scalability and performance.
+<br><br>
+BGP EVPN VXLAN: The Nexus 9000 delivers the industry's first Border Gateway Protocol (BGP) EVPN-based control plane for VXLAN. It supports highly scalable multitenancy, optimized resource use, and traffic routing for transparent workload mobility.
+Nexus 9500 100 GE module: The 8-port module delivers one of the industry’s highest densities per chassis for high-performance backbone and router connectivity deployments.<br><br>
+Nexus 9300 100 GE module: The 4-port uplink connectivity to spine switches or routers supports both CompactFlash memory (CPF2) optics and Cisco CPAK 100 GE modules through converters.<br><br>
+Nexus 93120TX Switch: High scalability in a 2RU compact form factor includes 96 10-Gbps connectivity and 40 Gigabit Ethernet uplinks for leaf-spine or three-tier deployments.<br><br>
+DC power supplies (9500 and 9300): Further deployment flexibility has been added to the Nexus 9000 Series.
+        </p>
+        <ul class="row tagline">
+          <li>
+            <a href="#" class="button">Download</a>
+            <span>Downloaded: 72 times</span>
+            <span>Tags: Switches, Python</span>
+          </li>
+        </ul>
+        <div class="comments">No Comments</div>
+      </div>
+      <div class="column-side">
+        <div id="about-the-author">
+          <h2>About the Author</h2>
+          <div class="author-description">
+            <div style="overflow: hidden">
+              <a href="#" class="avatar">
+                <img class="avatar" src="{% static 'img/hobbes.jpg' %}">
+              </a>
+              <div class="items">
+                <div style="font-size: 18px"><a href="{% url 'profile' %}">Chris Flanagan</a></div>
+                <div>@cflanagan</div>
+                <div>
+                  <span class="votes"><i class="fa fa-angle-up"></i> 42</span>
+                </div>
+              </div>
+            </div>
+            <p style="padding-bottom: 40px">
+              This section describes the different types of interfaces supported by the switch with references to chapters that contain more detailed information about configuring these interface types. The rest of the chapter describes configuration procedures for switch ports.
+
+Switch ports are Layer 2-only interfaces associated with a physical port. They are used for managing the physical interface and associated Layer 2 protocols and do not handle routing or bridging. A switch port can be an access port or a trunk port.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

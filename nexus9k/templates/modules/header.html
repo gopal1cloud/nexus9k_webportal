@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<div id="parent"></div>
+<header id="header" class="{% if request.path != '/' %}header-grey-bottom{% endif %} light">
+  <div class="content">
+    <div class="row">
+      <div class="row">
+        <a id="logo" href="/">
+          <img src="{% static 'img/cisco-logo.png' %}" alt="Cisco logo" title="Go Home">
+        </a>
+        <span id="site-name" class="aero">
+          Nexus 9000 Community
+        </span>
+      </div>
+      <div id="access-menu" class="push-right">
+        <a href="#">Sign In</a>
+        <a href="#">Register</a>
+      </div>
+    </div>
+    <div class="row">
+      <nav id="nav">
+        <ul class="row">
+          <li><a href="">Get Started</a></li>
+          <li><a href="{% url 'articles' %}">Guides & Articles</a></li>
+          <li><a href="{% url 'scripts' %}">Script Repository</a></li>
+          <li><a href="{% url 'questions' %}">Ask the Community</a></li>
+        </ul>
+      </nav>
+      <form method="POST" class="search push-right">
+        <span class="fa fa-search"></span>
+        <input type="text" class="search-box" placeholder="Search">
+      </form>
+    </div>
+  </div>
+</header>

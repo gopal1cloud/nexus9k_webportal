@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block site-title %}Scripts{% endblock %}
+
+{% block content %}
+<div id="content">
+  <div class="content">
+    <div style="float: left; width: 600px">
+      <h2>Recent Scripts</h2>
+      <a href="{% url 'script' %}">Nexus9k Express Deploy</a>
+    </div>
+    <div style="overflow: hidden;">
+      <h2>Top Scripts</h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
