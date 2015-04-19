@@ -1,0 +1,43 @@
+.status-box{
+    margin: 10px;
+    padding:5px;
+    float:right;
+}
+.status-box.status-box-red{
+    background-color: #ffdfde;
+}
+
+.status-box.status-box-green{
+    background-color: #f1ffe6;
+}
+
+.status-box.status-box-blue{
+    background-color: #d5ffff;
+}
+
+.status-box.status-box-gray{
+    background-color: #dddddd;
+}
+
+.well-transparent{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.bottom-border{
+    border:none;
+     border-bottom: 1px solid #ddd;
+}
+
+hr{
+    width:100%;
+}
+
+.blockelement{
+    display: block;
+}
+
+.main-content{
+    margin-top:30px;
+}

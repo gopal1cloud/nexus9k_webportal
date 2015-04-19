@@ -4,15 +4,124 @@
 {% block site-title %}Scripts{% endblock %}
 
 {% block content %}
-<div id="content">
-  <div class="content">
-    <div style="float: left; width: 600px">
-      <h2>Recent Scripts</h2>
-      <a href="{% url 'script' %}">Nexus9k Express Deploy</a>
+
+  <div class="container">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+
+        <h3>Nexus 9000 quick deploy</h3>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h5>
+              <span class="label label-default">question</span>
+              <span class="label label-default">general</span>
+              <span class="label label-default">tech</span>
+            </h5>
+          </div>
+          <div class="col-md-4">
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-success">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Vote Up
+              </button>
+              <button type="button" class="btn btn-default" disabled>5</button>
+              <button type="button" class="btn btn-danger">
+                <span class="glyphicon glyphicon-thumbs-down"></span>Vote Down
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <br/>
+
+
+        <div class="row">
+          <div class="col-md-8">
+            Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
+            cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.Phasellus ultrices nulla quis
+            nibh.
+            Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
+            cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+          </div>
+          <div class="col-md-4 well well-sm row">
+            <div class="col-md-9">
+              <small class="text-muted">John Doe <br>Friday, 17 April 2015</small>
+
+            </div>
+            <div class="col-md-3">
+              <img src="{% static 'img/user.png' %}" class="img-circle">
+            </div>
+          </div>
+
+        </div>
+        <br/>
+      <pre>
+        def greet(name):
+          print 'hello', name
+      </pre>
+        <div class="col-md-12">
+          <div class="row"><h3>Comments</h3></div>
+          <div class="list-group row blockelement">
+            <a href="#" class="list-group-item">
+              Dapibus ac facilisis in
+              <span class="text-muted pull-right"><span class="glyphicon glyphicon-user"></span> Jane Doe (Friday, 17 April 2015)</span>
+            </a>
+            <a href="#" class="list-group-item">
+              Morbi leo risus
+              <span class="text-muted pull-right"><span class="glyphicon glyphicon-user"></span> Jane Doe (Friday, 17 April 2015)</span>
+            </a>
+            <a href="#" class="list-group-item">
+              Porta ac consectetur ac
+              <span class="text-muted pull-right"><span class="glyphicon glyphicon-user"></span> Jane Doe (Friday, 17 April 2015)</span>
+            </a>
+            <a href="#" class="list-group-item">
+              Vestibulum at eros
+              <span class="text-muted pull-right"><span class="glyphicon glyphicon-user"></span> Jane Doe (Friday, 17 April 2015)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-12" style="padding-top: 51px;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Top Questions</h4>
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="feed related">
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="/question">Nexus
+                    9000 Quick Deploy</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="/question">What are
+                    the best features of the Nexus 9000?</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="/question">Sampling
+                    at exatly Nyquist rate in Matlab?</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="/question">Getting
+                    an error in Odoo 8 Products Form Template?</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="/question">C -
+                    Sending parameters in parallel using websocket</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="/question">Query
+                    takes time to Execute?</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-    <div style="overflow: hidden;">
-      <h2>Top Scripts</h2>
-    </div>
+
   </div>
-</div>
+  <!-- /.container -->
+
 {% endblock %}

@@ -1,44 +1,271 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+
 {% load staticfiles %}
+
 
 {% block site-title %}Scripts{% endblock %}
 
 {% block content %}
-<div id="content">
-  <div class="content">
-    <div class="columns">
-      <div class="column-main">
-        <h2>Recent Questions</h2>
-        <ul class="feed related">
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="{% url 'question' %}">Nexus 9000 Quick Deploy</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="{% url 'question' %}">What are the best features of the Nexus 9000?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="{% url 'question' %}">Sampling at exatly Nyquist rate in Matlab?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="{% url 'question' %}">Getting an error in Odoo 8 Products Form Template?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="{% url 'question' %}">C - Sending parameters in parallel using websocket</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="{% url 'question' %}">Query takes time to Execute?</a></li>
-        </ul>
-      </div>
-      <div class="column-side">
-        <h2>Top Questions</h2>
-        <ul class="feed related">
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="{% url 'question' %}">Nexus 9000 Quick Deploy</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="{% url 'question' %}">What are the best features of the Nexus 9000?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="{% url 'question' %}">Sampling at exatly Nyquist rate in Matlab?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="{% url 'question' %}">Getting an error in Odoo 8 Products Form Template?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="{% url 'question' %}">C - Sending parameters in parallel using websocket</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="{% url 'question' %}">Query takes time to Execute?</a></li>
-        </ul>
-        <h2 style="margin-top: 30px">Frequently Downloaded</h2>
-        <ul class="feed related">
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="{% url 'question' %}">Nexus 9000 Quick Deploy</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="{% url 'question' %}">What are the best features of the Nexus 9000?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="{% url 'question' %}">Sampling at exatly Nyquist rate in Matlab?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="{% url 'question' %}">Getting an error in Odoo 8 Products Form Template?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="{% url 'question' %}">C - Sending parameters in parallel using websocket</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="{% url 'question' %}">Query takes time to Execute?</a></li>
-        </ul>
-      </div>
+    <div id="content">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <div class="container">
+    <div class="row">
+    <!--left panel-->
+    <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Recently Asked</h4>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-7">
+                  <div>
+                    <label>Sory by: </label>
+
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">Answers</button>
+                        <button type="button" class="btn btn-default">Views</button>
+                        <button type="button" class="btn btn-default">Votes</button>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-5">
+                  <div><h4><a href="{% url 'new_question' %}"><span class="fa fa-question-circle">Ask new Question</span></a></h4></div>
+                </div>
+              </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="question.html"><h3>Nexus 9000 Quick Deploy</h3></a>
+
+                <h5>Tags :
+                    <span class="label label-default">question</span>
+                    <span class="label label-default">general</span>
+                    <span class="label label-default">tech</span>
+                </h5>
+
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <div class="status-box status-box-blue text-center">
+                        <h4>1</h4>
+                        Votes
+                    </div>
+                    <div class="status-box status-box-green text-center">
+                        <h4>34</h4>
+                        Views
+                    </div>
+                    <div class="status-box status-box-red text-center">
+                        <h4>3</h4>
+                        Answers
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="question.html"><h3>What are the best features of the Nexus 9000?</h3></a>
+
+                <h5>Tags :
+                    <span class="label label-default">question</span>
+                    <span class="label label-default">general</span>
+                    <span class="label label-default">tech</span>
+                </h5>
+
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <div class="status-box status-box-blue text-center">
+                        <h4>1</h4>
+                        Votes
+                    </div>
+                    <div class="status-box status-box-green text-center">
+                        <h4>34</h4>
+                        Views
+                    </div>
+                    <div class="status-box status-box-red text-center">
+                        <h4>3</h4>
+                        Answers
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="question.html"><h3>Sampling at exatly Nyquist rate in Matlab?</h3></a>
+
+                <h5>Tags :
+                    <span class="label label-default">question</span>
+                    <span class="label label-default">general</span>
+                    <span class="label label-default">tech</span>
+                </h5>
+
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <div class="status-box status-box-blue text-center">
+                        <h4>1</h4>
+                        Votes
+                    </div>
+                    <div class="status-box status-box-green text-center">
+                        <h4>34</h4>
+                        Views
+                    </div>
+                    <div class="status-box status-box-red text-center">
+                        <h4>3</h4>
+                        Answers
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="question.html"><h3>Getting an error in Odoo 8 Products Form Template?</h3></a>
+
+                <h5>Tags :
+                    <span class="label label-default">question</span>
+                    <span class="label label-default">general</span>
+                    <span class="label label-default">tech</span>
+                </h5>
+
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <div class="status-box status-box-blue text-center">
+                        <h4>1</h4>
+                        Votes
+                    </div>
+                    <div class="status-box status-box-green text-center">
+                        <h4>34</h4>
+                        Views
+                    </div>
+                    <div class="status-box status-box-red text-center">
+                        <h4>3</h4>
+                        Answers
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="question.html"><h3>C - Sending parameters in parallel using websocket</h3></a>
+
+                <h5>Tags :
+                    <span class="label label-default">question</span>
+                    <span class="label label-default">general</span>
+                    <span class="label label-default">tech</span>
+                </h5>
+
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <div class="status-box status-box-blue text-center">
+                        <h4>1</h4>
+                        Votes
+                    </div>
+                    <div class="status-box status-box-green text-center">
+                        <h4>34</h4>
+                        Views
+                    </div>
+                    <div class="status-box status-box-red text-center">
+                        <h4>3</h4>
+                        Answers
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-</div>
+    <!--right panel-->
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Top Questions</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="feed related">
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="/question">Nexus
+                                9000 Quick Deploy</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="/question">What are
+                                the best features of the Nexus 9000?</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="/question">Sampling
+                                at exatly Nyquist rate in Matlab?</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="/question">Getting
+                                an error in Odoo 8 Products Form Template?</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="/question">C -
+                                Sending parameters in parallel using websocket</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="/question">Query
+                                takes time to Execute?</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Frequently Downloaded</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="feed related">
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="/question">Nexus
+                                9000 Quick Deploy</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="/question">What are
+                                the best features of the Nexus 9000?</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="/question">Sampling
+                                at exatly Nyquist rate in Matlab?</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="/question">Getting
+                                an error in Odoo 8 Products Form Template?</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="/question">C -
+                                Sending parameters in parallel using websocket</a></li>
+                            <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="/question">Query
+                                takes time to Execute?</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    <!-- /.container -->
+    </div>
 {% endblock %}

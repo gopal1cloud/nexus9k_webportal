@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block site-title %}Scripts{% endblock %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/site.css' %}">
+  <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+  <div class="container main-content">
+
+
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4>New Question</h4></div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="qtitle">Title</label>
+                <input type="text" class="form-control" id="qtitle" placeholder="Enter Title">
+              </div>
+              <div class="form-group">
+                <label for="qbody">Body</label>
+                <textarea class="form-control" id="qbody" rows="10"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="qtags">Title</label>
+                <input type="text" class="form-control" id="qtags" placeholder="Tags">
+              </div>
+              <button type="submit" class="btn btn-primary pull-right">Post Question</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Top Questions</h4>
+              </div>
+            </div>
+            <div class="row">
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="feed related">
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="/question">Nexus
+                    9000 Quick Deploy</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="/question">What are
+                    the best features of the Nexus 9000?</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="/question">Sampling
+                    at exatly Nyquist rate in Matlab?</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="/question">Getting
+                    an error in Odoo 8 Products Form Template?</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="/question">C -
+                    Sending parameters in parallel using websocket</a></li>
+                  <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="/question">Query
+                    takes time to Execute?</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}

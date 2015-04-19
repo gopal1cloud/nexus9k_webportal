@@ -14,4 +14,7 @@ urlpatterns = [
     url(r'^article', TemplateView.as_view(template_name='article.html'), name='article'),
     url(r'^questions', TemplateView.as_view(template_name='questions.html'), name='questions'),
     url(r'^question', TemplateView.as_view(template_name='question.html'), name='question'),
+    url(r'^new_question', TemplateView.as_view(template_name='newquestion.html'), name='new_question'),
+    url(r'^login', TemplateView.as_view(template_name='registration/login.html'), name='login'),
+    url(r'^register', TemplateView.as_view(template_name='registration/registration_form.html'), name='register'),
 ]
