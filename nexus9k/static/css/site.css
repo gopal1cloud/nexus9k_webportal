@@ -1,7 +1,7 @@
 /*Main Header */
 
 .navbar-nexus{
-  background-color: #435869;border-radius: 0px;
+  background-color: #435869;border-radius: 0px;border:none;
 }
 .navbar-nexus .navbar-brand > img{display: inline}
 .navbar-nexus .navbar-brand{height: auto;}
@@ -27,6 +27,14 @@ footer.footer .nav-heading{margin-left:15px;}
 footer.footer ul li a{padding-top:5px;padding-bottom: 5px;}
 .footer a{color:#55555E; }
 
+
+/*hom Page*/
+
+.jumbotron-nex{
+    margin-top:-20px;
+    background: url('../img/earth.jpg');
+    background-size:100% 100%;
+}
 
 .status-box{
     margin: 10px;
@@ -72,17 +80,14 @@ hr{
     margin-top:30px;
 }
 
-.jumbotron-background{
-    background: url('../img/earth.jpg');
-    background-size:100% 100%;
-}
+
 
 .text-white{
     color: #fff;
 }
 
 .container{
-    max-width:980px;
+    width:980px;
 }
 
 .panel-google-plus {
