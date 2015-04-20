@@ -36,6 +36,19 @@ footer.footer ul li a{padding-top:5px;padding-bottom: 5px;}
     background-size:100% 100%;
 }
 
+
+/*Components*/
+.transparent{
+  background-color: transparent;
+}
+.bkg-white{background-color: #fff;}
+.bkg-grey{background-color: #F4F4F4}
+
+.panel-nex{
+  border:none;box-shadow: none;
+}
+.panel-nex .bkg-white{background-color: #fff;}
+
 .status-box{
     margin: 10px;
     padding:5px;
@@ -86,9 +99,9 @@ hr{
     color: #fff;
 }
 
-.container{
-    width:980px;
-}
+/*.container{*/
+   /*width:980px;*/
+/*}*/
 
 .panel-google-plus {
     border: 1px solid rgb(216, 216, 216);

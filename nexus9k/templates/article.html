@@ -4,15 +4,133 @@
 {% block site-title %}Scripts{% endblock %}
 
 {% block content %}
-<div id="content">
-  <div class="content">
-    <div style="float: left; width: 600px">
-      <h2>Recent Scripts</h2>
-      <a href="{% url 'script' %}">Nexus9k Express Deploy</a>
+<div class="container">
+<div class="'row">
+  <div class="col-md-8">
+
+    <div class="col-xs-12 bkg-white">
+      <ol class="breadcrumb transparent">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+      </ol>
     </div>
-    <div style="overflow: hidden;">
-      <h2>Top Scripts</h2>
+    <div class="col-xs-12">
+    <div class="panel panel-default panel-nex ">
+      <div class="panel-heading bkg-white">
+        <h3>Cisco offers ACI alternative for Nexus 9000</h3>
+        <small>Uploaded Aug 20, 2015   ·   1,240 views</small>
+      </div>
+      <div class="panel-body">
+        <div class="entry-body">
+          <p class="description">
+            Cisco is adding a new control plane capability to its Nexus 9000 switches for customers not yet opting for or needing a full-blown application policy infrastructure.
+            <br>
+            <img class="stock" src="http://images.techhive.com/images/article/2015/02/nexus-9000-100566714-primary.idge.jpg">
+            <br>
+            Cisco’s BGP Control Plane for VXLAN is designed to appeal to operators of multitenant clouds looking for familiar BGP routing protocol features with which to scale their networks and make them more flexible for the demands of cloud networking. VXLAN, which scales VLAN segmentation to 16 million endpoints, does not specify a control plane and relies on a flood-and-learn mechanism for host and endpoint discovery, which can limit scalability, Cisco says.
+            <br><br>
+            BGP Control Plane for VXLAN can also serve as an alternative to Cisco’s Application Centric Infrastructure (ACI) control plane for the Nexus 9000s. The ACI fabric is based on VXLAN routing and an application policy controller called Application Policy Infrastructure Controller (APIC).
+            <br><br>
+            “This is definitely an alternative deployment model,” said Michael Cohen, director of product management in Cisco’s Insieme Networks Business Unit. “It’s a lighter weight (ACI) and some customers will just use this.”
+            <br><br>
+            BGP Control Plane for VXLAN runs on the standalone mode versions of the Nexus 9000, which requires a software upgrade to operate in ACI mode.
+            <br><br>
+            Cohen sidestepped questions on whether Cisco would now offer another controller just for the BGP Control Plane for VXLAN environments in addition to the ACI APIC and APIC Enterprise Module controllers it now offers.
+          </p>
+        </div>
+      </div>
     </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-4">
+
+    <div class="panel panel-default panel-nex">
+      <div class="panel-heading bkg-white">
+        ABOUT THE AUTHOR
+      </div>
+      <div class="panel-body bkg-grey">
+        <div class="row">
+          <div class="col-xs-3">
+            <div class="thumbnail">
+              <a href="/profile"><img src="https://www.gravatar.com/avatar/3923ecf12a5f69a3ddf00d4ba6192ac0?s=64&amp;d=identicon&amp;r=PG"></a>
+            </div>
+          </div>
+          <div class="col-xs-9">
+            <div class="">
+              <a class="name" href="/profile">Zach Beane</a> <span class="points"><i class="fa fa-bolt"></i> 1,112</span><br>
+              <div class="occupation">Network Engineer</div>
+            </div>
+          </div>
+        </div>
+
+            <div class="bio-text">
+              Zach has been immersed in the network world for over 20 years. He enjoys designing complex systems
+              and building sustainable infastructure. He occasionally delves into web vulnerabilities
+              and denial of service attacks evolving threat analysis, attack signature development and product hacking.
+            </div>
+            <div class="read-more">
+              <a href="#">Read more from Zach Beane »</a>
+            </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default panel-nex">
+      <div class="panel-heading bkg-white">
+        RELATED ARTICLES
+      </div>
+      <div class="panel-body bkg-grey">
+        <ul class="list-group">
+          <li class="list-group-item clearfix">
+              <div class="col-xs-3">
+                <a href="/profile"><img src="https://www.gravatar.com/avatar/3923ecf12a5f69a3ddf00d4ba6192ac0?s=64&amp;d=identicon&amp;r=PG"></a>
+              </div>
+              <div class="col-xs-9">
+                <a class="name" href="/profile">ACI customers continue to steadily grow</a>
+              </div>
+          </li>
+          <li class="list-group-item clearfix">
+              <div class="col-xs-3">
+                <a href="/profile"><img src="https://www.gravatar.com/avatar/3923ecf12a5f69a3ddf00d4ba6192ac0?s=64&amp;d=identicon&amp;r=PG"></a>
+              </div>
+              <div class="col-xs-9">
+                <a class="name" href="/profile">ACI customers continue to steadily grow</a>
+              </div>
+          </li>
+          <li class="list-group-item clearfix">
+              <div class="col-xs-3">
+                <a href="/profile"><img src="https://www.gravatar.com/avatar/3923ecf12a5f69a3ddf00d4ba6192ac0?s=64&amp;d=identicon&amp;r=PG"></a>
+              </div>
+              <div class="col-xs-9">
+                <a class="name" href="/profile">ACI customers continue to steadily grow</a>
+              </div>
+          </li>
+          <li class="list-group-item clearfix">
+              <div class="col-xs-3">
+                <a href="/profile"><img src="https://www.gravatar.com/avatar/3923ecf12a5f69a3ddf00d4ba6192ac0?s=64&amp;d=identicon&amp;r=PG"></a>
+              </div>
+              <div class="col-xs-9">
+                <a class="name" href="/profile">ACI customers continue to steadily grow</a>
+              </div>
+          </li>
+          <li class="list-group-item clearfix">
+              <div class="col-xs-3">
+                <a href="/profile"><img src="https://www.gravatar.com/avatar/3923ecf12a5f69a3ddf00d4ba6192ac0?s=64&amp;d=identicon&amp;r=PG"></a>
+              </div>
+              <div class="col-xs-9">
+                <a class="name" href="/profile">ACI customers continue to steadily grow</a>
+              </div>
+          </li>
+
+        </ul>
+    </div>
+    </div>
+
   </div>
 </div>
-{% endblock %}
+</div>
+
+{% endblock content %}
