@@ -1,107 +1,138 @@
-{% extends 'base.html' %}
+{% extends 'bootstrap_base.html' %}
 {% load staticfiles %}
 
 {% block site-title %}Home{% endblock %}
 {% block meta-description %}Cisco Nexus 9000 Series Community{% endblock %}
 
 {% block content %}
-<div id="content">
-  <div class="welcome">
-    <div class="content">
-    Welcome to the Community.
-    <br>
-    <div class="sub">Get started by reading some articles or jump right into discussions.</div>
+  <div class="jumbotron jumbotron-background">
+    <div class="container">
+      <h3 class="text-white">Welcome to the Community. </h3>
+      <h4 class="text-white">Get started by reading some articles or jump right into discussions.</h4>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Featured Articles -->
+      <div class="col-md-7">
+        <div class="row">
+          <h4>
+            <span class="fa fa-graduation-cap"></span>
+            Featured Articles
+          </h4>
+          <hr>
+        </div>
+
+        <div class="row">
+          <div class="[ panel panel-default ] panel-google-plus">
+            <div class="panel-heading">
+              <img class="[ img-circle pull-left ]"
+                   src="https://devcentral.f5.com/profilepic.ashx?userid=30&amp;w=50&amp;h=50"
+                   alt="User icon">
+
+              <h3>Cisco offers ACI alternative for Nexus 9000</h3>
+              <h5><span>By John Doe</span> - <span>Jun 27, 2014</span></h5>
+            </div>
+            <div class="panel-body">
+              <p>Cisco is adding a new control plane capability to its Nexus 9000 switches for customers not yet opting for or needing a full-blown application policy infrastructure.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="[ panel panel-default ] panel-google-plus">
+            <div class="panel-heading">
+              <img class="[ img-circle pull-left ]"
+                   src="https://devcentral.f5.com/profilepic.ashx?userid=32&amp;w=50&amp;h=50"
+                   alt="User icon">
+
+              <h3>ACI customers continue to steadily grow</h3>
+              <h5><span>By John Doe</span> - <span>Jun 27, 2014</span></h5>
+            </div>
+            <div class="panel-body">
+              <p>Cisco now has 1,700 customers for its Nexus 9000 switch and over 300 for its APIC controller, the central element of its Application Centric Infrastructure (ACI) programmable networking and SDN strategy..</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="[ panel panel-default ] panel-google-plus">
+            <div class="panel-heading">
+              <img class="[ img-circle pull-left ]"
+                   src="https://devcentral.f5.com/profilepic.ashx?userid=34&amp;w=50&amp;h=50"
+                   alt="User icon">
+
+              <h3>Converting NXOS Standalone Mode</h3>
+              <h5><span>By John Doe</span> - <span>Jun 27, 2014</span></h5>
+            </div>
+            <div class="panel-body">
+              <p>This article provides information on the Nexus 9000 (N9K) Series Switch Conversion process from NXOS standalone mode to ACI mode. This information applies to switches that are running a Cisco NX-OS release.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="[ panel panel-default ] panel-google-plus">
+            <div class="panel-heading">
+              <img class="[ img-circle pull-left ]"
+                   src="https://devcentral.f5.com/profilepic.ashx?userid=35&amp;w=50&amp;h=50"
+                   alt="User icon">
+
+              <h3>Cisco Nexus 9000 Design and Configuration</h3>
+              <h5><span>By John Doe</span> - <span>Jun 27, 2014</span></h5>
+            </div>
+            <div class="panel-body">
+              <p>The vendor's ACI strategy is its answer to the growing SDN trend, and the Nexus 9000 lineup are key parts of the effort.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trending Questions -->
+      <div class="col-md-offset-1 col-md-4">
+        <div class="row">
+          <h4>
+            <span class="fa fa-fire"></span>
+            Trending Questions
+          </h4>
+          <hr>
+        </div>
+        <div class="row">
+          <ul class="list-group">
+
+            <li class="list-group-item">
+              Nexus 9000 Quick Deploy
+              <span class="badge"><span class="fa fa-angle-up">14</span></span>
+            </li>
+            <li class="list-group-item">
+              Best features of the Nexus 9000?
+              <span class="badge"><span class="fa fa-angle-up">30</span></span>
+            </li>
+            <li class="list-group-item">
+              Sampling at exatly Nyquist rate?
+              <div class="badge"><span class="fa fa-angle-up">18</span></div>
+            </li>
+            <li class="list-group-item">
+              Getting an error in Odoo 8 Products?
+              <span class="badge"><span class="fa fa-angle-up">16</span></span>
+            </li>
+            <li class="list-group-item">
+              C - Sending parameters in parallel using websocket
+              <span class="badge"><span class="fa fa-angle-up">14</span></span>
+            </li>
+            <li class="list-group-item">
+              Query takes time to Execute?
+              <span class="badge"><span class="fa fa-angle-up">10</span></span>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
     </div>
   </div>
-  <div class="content">
-    <div class="columns">
-      <div class="column-main">
-        <h2><a href="{% url 'articles' %}"><i class="fa fa-graduation-cap"></i> Featured Articles</a></h2>
-        <ul class="feed">
-          <li>
-            <a href="{% url 'profile' %}" class="thumb">
-              <img src="{% static 'img/hobbes.jpg' %}">
-            </a>
-            <div class="text">
-              <h3><a href="{% url 'article' %}">Deploying with Nexus 9000</a></h3>
-              <small>by Mark Benton &middot; Aug 20, 2015</small>
-              <p>
-                If you have anything to do with developing products or working in
-                IT helping to deploy and run them, chances are you have heard the
-                term "DevOps" in one form or another. Just like the ubiquitous
-                "Cloud" floating out in the Internet somewhere.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="{% url 'profile' %}" class="thumb">
-              <img src="https://devcentral.f5.com/profilepic.ashx?userid=30&w=50&h=50">
-            </a>
-            <div class="text">
-              <h3><a href="{% url 'article' %}">DevOps 101 - A Brief History Of Time</a></h3>
-              <small>by Andy Felton &middot; Aug 20, 2015</small>
-              <p>
-                If you have anything to do with developing products or working in
-                IT helping to deploy and run them, chances are you have heard the
-                term "DevOps" in one form or another. Just like the ubiquitous
-                "Cloud" floating out in the Internet somewhere.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="{% url 'profile' %}" class="thumb">
-              <img src="https://devcentral.f5.com/profilepic.ashx?userid=183815&w=50&h=50">
-            </a>
-            <div class="text">
-              <h3><a href="{% url 'article' %}">You named your products "Good, Better and Best?" What were you thinking?</a></h3>
-              <small>by Dan Edlemen &middot; Aug 20, 2015</small>
-              <p>
-                If you have anything to do with developing products or working in
-                IT helping to deploy and run them, chances are you have heard the
-                term "DevOps" in one form or another. Just like the ubiquitous
-                "Cloud" floating out in the Internet somewhere.
-              </p>
-            </div>
-          </li>
-          <li>
-            <a href="{% url 'profile' %}" class="thumb">
-              <img src="https://devcentral.f5.com/profilepic.ashx?userid=183815&w=50&h=50">
-            </a>
-            <div class="text">
-              <h3><a href="{% url 'article' %}">You named your products "Good, Better and Best?" What were you thinking?</a></h3>
-              <small>by Dan Edlemen &middot; Aug 20, 2015</small>
-              <p>
-                If you have anything to do with developing products or working in
-                IT helping to deploy and run them, chances are you have heard the
-                term "DevOps" in one form or another. Just like the ubiquitous
-                "Cloud" floating out in the Internet somewhere.
-              </p>
-            </div>
-          </li>
-        </ul>
-        <a href="{% url 'articles' %}" class="see-all">See all articles &raquo;</a>
-      </div>
-      <div class="column-side">
-        <h2><a href="{% url 'questions' %}"><i class="fa fa-fire"></i> Trending Questions</a></h2>
-        <ul class="feed related">
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 42</span><a href="{% url 'question' %}">What is the best way to deploy?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 30</span><a href="{% url 'question' %}">What are the best features of the Nexus 9000?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 18</span><a href="{% url 'question' %}">Sampling at exatly Nyquist rate in Matlab?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 16</span><a href="{% url 'question' %}">Getting an error in Odoo 8 Products Form Template?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 14</span><a href="{% url 'question' %}">C - Sending parameters in parallel using websocket</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 10</span><a href="{% url 'question' %}">Query takes time to Execute?</a></li>
-        </ul>
-        <h2 style="margin-top: 30px;"><a href="{% url 'questions' %}">Recent Questions</a></h2>
-        <ul class="feed related">
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 0</span><a href="{% url 'question' %}">What is the best way to deploy?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 2</span><a href="{% url 'question' %}">What are the best features of the Nexus 9000?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 1</span><a href="{% url 'question' %}">Getting an error in Odoo 8 Products Form Template?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 2</span><a href="{% url 'question' %}">What is the best way to deploy?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 1</span><a href="{% url 'question' %}">Query takes time to Execute?</a></li>
-          <li><span class="votes"><i class="fa fa-angle-up"></i> 0</span><a href="{% url 'question' %}">Sampling at exatly Nyquist rate in Matlab?</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
 {% endblock %}
