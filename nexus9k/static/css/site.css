@@ -99,10 +99,6 @@ hr{
     color: #fff;
 }
 
-/*.container{*/
-   /*width:980px;*/
-/*}*/
-
 .panel-google-plus {
     border: 1px solid rgb(216, 216, 216);
     font-family: 'Roboto', sans-serif;
@@ -133,4 +129,9 @@ hr{
 .panel-google-plus > .panel-body {
     padding-top: 5px;
     font-size: 13px;
+}
+
+.avatar{
+    float:left;
+    margin: 10px 10px 10px 0px;
 }
