@@ -16,6 +16,18 @@
   padding: 15px 0 15px 0;
 }
 
+/*Main Footer*/
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: #f5f5f5;
+}
+footer.footer .nav-heading{margin-left:15px;}
+footer.footer ul li a{padding-top:5px;padding-bottom: 5px;}
+.footer a{color:#55555E; }
+
+
 .status-box{
     margin: 10px;
     padding:5px;
