@@ -54,6 +54,12 @@ footer.footer ul li a{padding-top:5px;padding-bottom: 5px;}
     padding:5px;
     float:right;
 }
+
+/*registration module*/
+#register-header{
+  background-color: #435869;
+}
+
 .status-box.status-box-red{
     background-color: #ffdfde;
 }
