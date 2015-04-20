@@ -1,28 +1,17 @@
+{% extends 'bootstrap_base.html' %}
 {% load staticfiles %}
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
 
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="description" content="{% block meta-description %}{% endblock %}">
+{% block site-title %}Register{% endblock %}
 
-    <title>{% block site-title %}Login{% endblock %} - Cisco Nexus 9000 Series Community</title>
+{% block header %}
+  {% include "registration/header.html" %}
+{% endblock header %}
+{% block footer %}{% endblock footer %}
 
-    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400|Lato|Hind|Noto+Sans|Source+Sans+Pro|Rosario|Open+Sans">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+{% block content %}
 
-    <link rel="stylesheet" href="{% static 'css/site.css' %}">
-  </head>
-  <body class="main-content">
     <div id="content" class="text-center">
 
-      <a id="logo-lg" href="{% url 'home' %}"><img src="{{STATIC_URL}}img/cisco-logo-dark.png"/> </a>
-    <div class="well well-transparent">
-        <div id="logo-text">Cisco Nexus 9000 Community.</div>
-    </div>
     <div class="row">
         <div class="col-xs-12 col-md-6 col-md-offset-3 ">
             <div class="panel panel-default">
@@ -67,19 +56,24 @@
                                         {% endfor %}
                                     </div>
                                 <div class="form-group">
-                                        <input type="password" name="password2"
-                                               placeholder="Password Reenter" class="form-control"
-                                               value="{{form.password2.value|default:''}}">
-                                        {% for error in form.password2.errors %}
-                                        <span class="text-danger small">{{error}}</span>
-                                        {% endfor %}
-                                    </div>
-                                     <div class="form-group">
-                                        <button class="btn btn-default" value="Submit">
-                                          Register
-                                        </button>
+                                      <input type="password" name="password2"
+                                             placeholder="Password Reenter" class="form-control"
+                                             value="{{form.password2.value|default:''}}">
+                                      {% for error in form.password2.errors %}
+                                      <span class="text-danger small">{{error}}</span>
+                                      {% endfor %}
+                                  </div>
+                                   <div class="form-group">
+                                      <button class="btn btn-default" value="Submit">
+                                        Register
+                                      </button>
 
-                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    Already Registered -
+                                    <a href="{% url 'login' %}">Login</a>
+                                  </div>
+
                             </div>
                         </div>
                         </div>
@@ -93,7 +87,5 @@
         </div>
     </div>
 </div>
-    <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js'%}"></script>
-  </body>
-</html>
+
+{% endblock content %}
