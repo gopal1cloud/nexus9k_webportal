@@ -27,7 +27,7 @@
 
 .bottom-border{
     border:none;
-     border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 hr{
@@ -40,4 +40,8 @@ hr{
 
 .main-content{
     margin-top:30px;
+}
+
+.glyphicon-big{
+    font-size: 25px;
 }
