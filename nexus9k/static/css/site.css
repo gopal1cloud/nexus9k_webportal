@@ -1,3 +1,21 @@
+/*Main Header */
+
+.navbar-nexus{
+  background-color: #435869;border-radius: 0px;
+}
+.navbar-nexus .navbar-brand > img{display: inline}
+.navbar-nexus .navbar-brand{height: auto;}
+.navbar-nexus .navbar-brand:hover, .navbar-nexus .navbar-brand:focus{color:#fff;}
+.navbar-nexus .navbar-nav > li > a {
+    color: #fff;
+  font-size: 16px;
+}
+.navbar-nexus .navbar-brand{color: #fff}
+.navbar-nexus .form-control{background-color: transparent;color:#fff;}
+.navbar-nexus .nav.navbar-nav, .navbar-form{
+  padding: 15px 0 15px 0;
+}
+
 .status-box{
     margin: 10px;
     padding:5px;

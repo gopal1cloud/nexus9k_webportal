@@ -1,4 +1,48 @@
 {% load staticfiles %}
+
+<nav class="navbar navbar-default navbar-nexus">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'img/cisco-logo.png' %}" alt="Cisco logo" title="Go Home">
+        <span style="padding: 0 10px 0 10px;">Nexus 9000</span>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Article Center</a></li>
+        <li><a href="#">Scripts</a></li>
+        <li><a href="{% url 'questions' %}">Discussion</a></li>
+        <li><a href="#">Export Corner</a></li>
+        <li><a href="#">Tools</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">SignIn</a></li>
+
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control input-sm" placeholder="Search">
+        </div>
+
+      </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% comment %}
+
+{% load staticfiles %}
 <div id="parent"></div>
 <header id="header" class="{% if request.path != '/' %}header-grey-bottom{% endif %} light">
   <div class="content">
@@ -12,8 +56,8 @@
         </span>
       </div>
       <div id="access-menu" class="push-right">
-        <a href="{% url 'login' %}">Sign In</a>
-        <a href="{% url 'register' %}">Register</a>
+        <a href="#">Sign In</a>
+        <a href="#">Register</a>
       </div>
     </div>
     <div class="row">
@@ -31,4 +75,4 @@
       </form>
     </div>
   </div>
-</header>
+</header>{% endcomment %}
