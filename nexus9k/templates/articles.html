@@ -4,16 +4,91 @@
 {% block site-title %}Scripts{% endblock %}
 
 {% block content %}
-<div id="content">
-  <div class="content">
-    <div class="columns">
-      <div class="column-main">
-        <h2>Featured Articles</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Article Center</h4>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </div>
+        </div>
+        <div class="row col-xs-12">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Recent</a></li>
+            <li role="presentation"><a href="#">Featured</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="https://www.gravatar.com/avatar/3923ecf12a5f69a3ddf00d4ba6192ac0?s=64&amp;d=identicon&amp;r=PG"
+                 class="avatar">
+            <h4>
+              <a href="/article">Cisco offers ACI alternative for Nexus 9000</a>
+            </h4>
+
+            <p>
+              Cisco is adding a new control plane capability to its Nexus 9000 switches for customers not yet opting for
+              or needing a full-blown application policy infrastructure.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="https://devcentral.f5.com/profilepic.ashx?userid=150273&amp;w=64&amp;h=64"
+                 class="avatar">
+            <h4>
+              <a href="/article">ACI customers continue to grow</a>
+            </h4>
+
+            <p>
+              Cisco now has 1,700 customers for its Nexus 9000 switch and over 300 for its APIC controller, the central
+              element of its Application Centric Infrastructure (ACI) programmable networking and SDN strategy.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="https://devcentral.f5.com/profilepic.ashx?userid=114104&amp;w=64&amp;h=64"
+                 class="avatar">
+            <h4>
+              <a href="/article">Converting NXOS Standalone Mode</a>
+            </h4>
+
+            <p>
+              This article provides information on the Nexus 9000 (N9K) Series Switch Conversion process from NXOS
+              standalone mode to ACI mode. This information applies to switches that are running a Cisco NX-OS release.
+            </p>
+          </div>
+        </div>
+
       </div>
-      <div class="column-side">
-        <h2>Recent Articles</h2>
+
+      <div class="col-md-4">
+        <h4>Recent Activity</h4>
+        <hr/>
+        <div class="list-group">
+          <a href="#" class="list-group-item">
+            <h5 class="list-group-item-heading">Lori MacVittie commented on Converting NXOS Standalone:</h5>
+
+            <p class="list-group-item-text">How do you get it to boot without going to loader everytime?</p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h5 class="list-group-item-heading">Lori MacVittie commented on Converting NXOS Standalone:</h5>
+
+            <p class="list-group-item-text">How do you get it to boot without going to loader everytime?</p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h5 class="list-group-item-heading">Lori MacVittie commented on Converting NXOS Standalone:</h5>
+            <p class="list-group-item-text">How do you get it to boot without going to loader everytime?</p>
+          </a>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
 {% endblock %}
