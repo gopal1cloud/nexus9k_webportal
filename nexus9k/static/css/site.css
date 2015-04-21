@@ -161,3 +161,18 @@ hr{
 .description > dl > dd{
     margin-bottom: 10px;
 }
+
+.description > img{
+    margin:5px;
+}
+
+.user-about > h4{
+    display: inline;
+}
+
+.user-about > img{
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+
