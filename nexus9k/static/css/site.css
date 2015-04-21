@@ -139,3 +139,16 @@ hr{
     float:left;
     margin: 10px 10px 10px 0px;
 }
+
+.input-group-btn select {
+	border-color: #ccc;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.script-title{
+    margin-bottom:3px;
+    margin-top:12px;
+}
