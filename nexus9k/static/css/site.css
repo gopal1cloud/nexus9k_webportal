@@ -55,6 +55,37 @@ footer.footer ul li a{padding-top:5px;padding-bottom: 5px;}
     float:right;
 }
 
+.panel-transparent{
+    box-shadow: none;
+    border:none;
+}
+.panel-transparent > .panel-heading{
+    border:none;
+    border-bottom: 1px solid #eee;
+    background:transparent;
+    font-weight: 500;
+    font-size:18px;
+    box-shadow: none;
+
+}
+
+.panel-transparent >.panel-footer{
+    background:transparent;
+    border:none
+}
+
+.panel-transparent > .panel-body > .list-group{
+    margin:-15px;
+}
+
+.panel-transparent > .panel-body > .list-group > .list-group-item{
+    border:none;
+    border-radius: 0px;
+    background: transparent;
+    border-bottom: 1px solid lightgray;
+}
+
+
 /*registration module*/
 #register-header{
   background-color: #435869;
@@ -176,3 +207,11 @@ hr{
 }
 
 
+.list-group-item > img{
+    float:left;
+    margin-right: 8px;
+}
+
+.list-group-item > .points{
+    margin-top:11px;
+}
