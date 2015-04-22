@@ -56,36 +56,10 @@ footer.footer ul li a{padding-top:5px;padding-bottom: 5px;}
     float:right;
 }
 
-.panel-transparent{
-    box-shadow: none;
-    border:none;
+.avatar{
+    float:left;
+    margin: 10px 10px 10px 0px;
 }
-.panel-transparent > .panel-heading{
-    border:none;
-    border-bottom: 1px solid #eee;
-    background:transparent;
-    font-weight: 500;
-    font-size:18px;
-    box-shadow: none;
-
-}
-
-.panel-transparent >.panel-footer{
-    background:transparent;
-    border:none
-}
-
-.panel-transparent > .panel-body > .list-group{
-    margin:-15px;
-}
-
-.panel-transparent > .panel-body > .list-group > .list-group-item{
-    border:none;
-    border-radius: 0px;
-    background: transparent;
-    border-bottom: 1px solid lightgray;
-}
-
 
 /*registration module*/
 #register-header{
@@ -108,76 +82,17 @@ footer.footer ul li a{padding-top:5px;padding-bottom: 5px;}
     background-color: #dddddd;
 }
 
-.well-transparent{
-    border: none;
-    background-color: transparent;
-    box-shadow: none;
-}
-
-.bottom-border{
-    border:none;
-    border-bottom: 1px solid #ddd;
-}
 
 hr{
     width:100%;
 }
 
-.blockelement{
-    display: block;
-}
 
-.main-content{
-    margin-top:30px;
-}
 
-.text-white{
-    color: #fff;
-}
 
-.panel-google-plus {
-    border: 1px solid rgb(216, 216, 216);
-    font-family: 'Roboto', sans-serif;
-}
-
-.panel-google-plus > .panel-heading,
-.panel-google-plus > .panel-footer {
-    background-color: rgb(255, 255, 255);
-    border-width: 0px;
-}
-.panel-google-plus > .panel-heading {
-    margin-top: 20px;
-    padding-bottom: 5px;
-}
-.panel-google-plus > .panel-heading > img {
-    margin-right: 15px;
-}
-.panel-google-plus > .panel-heading > h3 {
-    margin: 0px;
-    font-size: 14px;
-    font-weight: 700;
-}
-.panel-google-plus > .panel-heading > h5 {
-    color: rgb(153, 153, 153);
-    font-size: 12px;
-    font-weight: 400;
-}
-.panel-google-plus > .panel-body {
-    padding-top: 5px;
-    font-size: 13px;
-}
-
-.avatar{
-    float:left;
-    margin: 10px 10px 10px 0px;
-}
-
+/* Scripts Module */
 .input-group-btn select {
-	border-color: #ccc;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+	height: 28px;
 }
 
 .script-title{
@@ -206,7 +121,6 @@ hr{
     margin-top:0px;
     margin-bottom: 0px;
 }
-
 
 .list-group-item > img{
     float:left;
