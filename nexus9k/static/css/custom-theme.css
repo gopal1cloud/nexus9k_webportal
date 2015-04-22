@@ -1,37 +1,35 @@
 /* Transparent panels, no borders */
-.panel-transparent{
+.panel-transparent {
     box-shadow: none;
-    border:none;
+    border: none;
 }
 
-.panel-transparent > .panel-heading{
-    border:none;
+.panel-transparent > .panel-heading {
+    border: none;
     border-bottom: 1px solid #eee;
-    background:transparent;
+    background: transparent;
     font-weight: 500;
-    font-size:18px;
+    font-size: 18px;
     box-shadow: none;
 
 }
 
-.panel-transparent >.panel-footer{
-    background:transparent;
-    border:none
+.panel-transparent > .panel-footer {
+    background: transparent;
+    border: none
 }
 
-.panel-transparent > .panel-body > .list-group-transparent{
-    margin:-15px;
+.panel-transparent > .panel-body > .list-group-transparent {
+    margin: -15px;
 }
-
 
 /* Transparent list groups */
-.list-group-transparent > .list-group-item{
-    border:none;
+.list-group-transparent > .list-group-item {
+    border: none;
     border-radius: 0px;
     background: transparent;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #eee;
 }
-
 
 /* Google plus style panels */
 .panel-google-plus {
@@ -72,13 +70,18 @@
 }
 
 /* Transparent Wells */
-.well-transparent{
+.well-transparent {
     border: none;
     background-color: transparent;
     box-shadow: none;
 }
 
 /* White Text */
-.text-white{
+.text-white {
     color: #fff;
+}
+
+/* No borders*/
+.no-borders {
+    border: none !important;
 }
