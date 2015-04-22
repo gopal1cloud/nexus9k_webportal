@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block site-title %}Leaderboard{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <ul class="nav nav-tabs">
+          <li class="active" role="presentation"><a href="#Profile" aria-controls="Profile" role="tab" data-toggle="tab">Profile</a></li>
+          <li role="presentation"><a href="#Activity" aria-controls="Activity" role="tab" data-toggle="tab">Activity</a></li>
+        </ul>
+              <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="Profile">
+
+            <div class="panel panel-default panel-nex">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-4 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{{ STATIC_URL }}img/391e080ca946e20393e1b13cfc0c2b66.jpeg" alt="...">
+                      <div class="caption text-center">
+                        <h3 >135<small>Reputation</small></h3>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5 col-md-6">
+                    <h3>Ned Stark  &nbsp; <small>Network Engineer  &nbsp; <span class="fa fa-bolt"></span><strong>2000</strong></small></h3>
+                    <p>Zach has been immersed in the network world for over 20 years. He enjoys designing complex systems and building sustainable infastructure. He occasionally delves into web vulnerabilities and denial of service attacks evolving threat analysis, attack signature development and product hacking.</p>
+                  </div>
+
+                  <div class="col-sm-3">
+
+                    <div class="row">
+                      <div class="col-xs-3">
+                          <strong >1</strong>
+                          answer
+                      </div>
+
+                      <div class="col-xs-3">
+                          <strong >8</strong>
+                          questions
+                      </div>
+                      <div  class="col-xs-3">
+                          <strong>~6k</strong>
+                          people reached
+                      </div>
+                    </div>
+
+                    <div class="user-links">
+                      <ul class="list-unstyled">
+                        <li>
+                          <span class="icon-history"></span>
+                          Member for <span title="2010-11-06 08:06:04Z">4 years, 5 months</span>
+                        </li>
+                        <li>
+                          <span class="icon-eye"></span>
+                          6 profile views
+                        </li>
+                        <li>
+                          <span class="icon-time"></span>
+                          Last seen <span class="relativetime" title="2013-07-01 02:58:56Z">Jul 1 '13 at 2:58</span>
+                        </li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              </div>
+            </div>
+
+          <div role="tabpanel" class="tab-pane" id="Activity">...asd</div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+{% endblock %}

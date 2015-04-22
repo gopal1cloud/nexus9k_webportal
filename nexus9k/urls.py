@@ -17,4 +17,6 @@ urlpatterns = [
     url(r'^new_question', TemplateView.as_view(template_name='qa/newquestion.html'), name='new_question'),
     url(r'^login', TemplateView.as_view(template_name='registration/login.html'), name='login'),
     url(r'^register', TemplateView.as_view(template_name='registration/registration_form.html'), name='register'),
+    url(r'^product', TemplateView.as_view(template_name='product.html'), name='product'),
+    url(r'^leaderboard', TemplateView.as_view(template_name='leaderboard.html'), name='leaderboard'),
 ]
