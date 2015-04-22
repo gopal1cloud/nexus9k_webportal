@@ -4,17 +4,15 @@
 .navbar-nexus .navbar-brand{padding:15px;}
 .navbar-nexus .navbar-brand > img{display: inline}
 .navbar-nexus .navbar-brand:hover, .navbar-nexus .navbar-brand:focus{color:#fff;}
-.navbar-nexus .form-control{color:#fff;}
-.navbar-nexus .nav.navbar-nav, .navbar-form{
-  padding: 15px 0 15px 0;
+@media (min-width: 768px) {
+.navbar-nexus #global-search{width:500px;}
 }
-.navbar-nexus .navbar-nav > li > a {
-  padding-bottom: 0px;
- padding-top: 0px;
+@media (max-width: 768px) {
+.navbar-nexus #global-search{width:300px;}
 }
-.navbar-nexus .nav.navbar-nav{
-  padding: 30px 0px;
-}
+
+
+
 
 
 /*Main Footer*/
